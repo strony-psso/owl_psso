@@ -1,0 +1,288 @@
+/* line 1, ../sass/style.scss */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* line 7, ../sass/style.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../sass/style.scss */
+body {
+  font-display: swap;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #fff;
+  background-color: #27232C;
+  overflow-x: hidden;
+}
+
+/* line 19, ../sass/style.scss */
+section {
+  padding: 2%;
+}
+
+/* line 23, ../sass/style.scss */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* line 29, ../sass/style.scss */
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+/* line 34, ../sass/style.scss */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #5d5668;
+}
+
+/* line 40, ../sass/style.scss */
+::selection {
+  background-color: #5d5668;
+}
+
+/* line 44, ../sass/style.scss */
+.txt-move {
+  opacity: 0;
+}
+
+/* line 48, ../sass/style.scss */
+.animation {
+  transform: translateX(25%);
+  transition: transform 1s;
+}
+
+/* line 53, ../sass/style.scss */
+#menu {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  justify-content: space-evenly;
+  position: fixed;
+  z-index: 100;
+  transition: background-color 0.5s;
+  position: fixed;
+}
+/* line 66, ../sass/style.scss */
+#menu li a {
+  text-decoration: none;
+  color: #fff;
+}
+/* line 71, ../sass/style.scss */
+#menu.active {
+  background-color: rgba(50, 46, 56, 0.89);
+  border-bottom: 1px solid #2C2932;
+}
+/* line 75, ../sass/style.scss */
+#menu #toggler {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5d5866;
+}
+/* line 87, ../sass/style.scss */
+#menu #toggler .line {
+  display: block;
+  width: 80%;
+  height: 2px;
+  margin-bottom: 6px;
+  background-color: #fff;
+  transition: 0.5s;
+}
+/* line 96, ../sass/style.scss */
+#menu #toggler.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 10px);
+}
+/* line 99, ../sass/style.scss */
+#menu #toggler.active span:nth-child(2) {
+  opacity: 0;
+}
+/* line 102, ../sass/style.scss */
+#menu #toggler.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-6px);
+}
+
+/* line 109, ../sass/style.scss */
+#s1 {
+  width: 100%;
+  height: 100vh;
+  background-color: #3C3744;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* line 117, ../sass/style.scss */
+#s1 h1 {
+  font-size: 10vw;
+}
+/* line 120, ../sass/style.scss */
+#s1 h2 {
+  font-size: 3vw;
+}
+/* line 123, ../sass/style.scss */
+#s1 .text {
+  z-index: 10;
+}
+/* line 126, ../sass/style.scss */
+#s1 #logo {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 134, ../sass/style.scss */
+#s2 {
+  background-color: #322E38;
+}
+
+/* line 138, ../sass/style.scss */
+#s3 {
+  background-color: #2C2932;
+}
+
+/* line 142, ../sass/style.scss */
+#s4 {
+  background-color: #27232C;
+}
+
+/* line 146, ../sass/style.scss */
+.img-responsive {
+  width: 100%;
+}
+
+/* line 150, ../sass/style.scss */
+.row {
+  display: flex;
+}
+
+/* line 154, ../sass/style.scss */
+.col-md-6 {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* line 161, ../sass/style.scss */
+.col-md-6 p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-align: justify;
+}
+/* line 166, ../sass/style.scss */
+.col-md-6 .section-header {
+  font-size: 3rem;
+}
+/* line 170, ../sass/style.scss */
+.col-md-6 ul li {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 177, ../sass/style.scss */
+figure {
+  position: relative;
+}
+/* line 179, ../sass/style.scss */
+figure img {
+  border: 3px solid #656669;
+}
+/* line 182, ../sass/style.scss */
+figure figcaption {
+  position: absolute;
+  font-weight: bold;
+  bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.87);
+  padding: 10px;
+  opacity: 0.5;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+}
+
+/* line 194, ../sass/style.scss */
+.flying {
+  z-index: 10;
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  transform: translate(-20vw, -20vw);
+  transition: transform 3s;
+}
+
+/* line 203, ../sass/style.scss */
+.fly {
+  transform: translate(100vw, 100vw);
+}
+
+@media (max-width: 1200px) {
+  /* line 208, ../sass/style.scss */
+  .flying {
+    z-index: 10;
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    transform: translate(-40vw, -40vw);
+    transition: transform 1.5s;
+  }
+
+  /* line 216, ../sass/style.scss */
+  .fly {
+    transform: translate(100vw, 100vw);
+  }
+
+  /* line 219, ../sass/style.scss */
+  .row {
+    flex-direction: column;
+  }
+
+  /* line 222, ../sass/style.scss */
+  .col-md-6 {
+    width: 100%;
+  }
+
+  /* line 226, ../sass/style.scss */
+  #s1 h1 {
+    font-size: 15vw;
+  }
+  /* line 229, ../sass/style.scss */
+  #s1 h2 {
+    font-size: 4vw;
+  }
+}
+@media (max-width: 700px) {
+  /* line 236, ../sass/style.scss */
+  #menu {
+    flex-direction: column;
+    height: 100%;
+    width: 300px;
+    align-items: center;
+    background-color: #5d5866 !important;
+    transform: translateX(-300px);
+    transition: transform 0.5s;
+  }
+  /* line 244, ../sass/style.scss */
+  #menu.visible {
+    transform: translateX(0);
+  }
+}
