@@ -122,6 +122,7 @@ section {
     }
     .text {
         z-index: 10;
+        overflow: hidden;
     }
     #logo {
         position: absolute;
@@ -206,12 +207,7 @@ figure {
 
 @media(max-width: 1200px) {
     .flying {
-        z-index: 10;
-        position: absolute;
-        width: 40vw;
-        height: 40vw;
-        transform: translate(-40vw, -40vw);
-        transition: transform 1.5s;
+        display: none;
     }
     .fly {
         transform: translate(100vw, 100vw);

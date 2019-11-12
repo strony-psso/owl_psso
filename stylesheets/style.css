@@ -141,8 +141,9 @@ section {
 /* line 123, ../sass/style.scss */
 #s1 .text {
   z-index: 10;
+  overflow: hidden;
 }
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 #s1 #logo {
   position: absolute;
   right: 0;
@@ -150,32 +151,32 @@ section {
   transform: translateY(-50%);
 }
 
-/* line 134, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 #s2 {
   background-color: #322E38;
 }
 
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 #s3 {
   background-color: #2C2932;
 }
 
-/* line 142, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 #s4 {
   background-color: #27232C;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 .img-responsive {
   width: 100%;
 }
 
-/* line 150, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .row {
   display: flex;
 }
 
-/* line 154, ../sass/style.scss */
+/* line 155, ../sass/style.scss */
 .col-md-6 {
   width: 50%;
   padding: 20px;
@@ -184,31 +185,31 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-/* line 161, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .col-md-6 p {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   text-align: justify;
 }
-/* line 166, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .col-md-6 .section-header {
   font-size: 3rem;
 }
-/* line 170, ../sass/style.scss */
+/* line 171, ../sass/style.scss */
 .col-md-6 ul li {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-/* line 177, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 figure {
   position: relative;
 }
-/* line 179, ../sass/style.scss */
+/* line 180, ../sass/style.scss */
 figure img {
   border: 3px solid #656669;
 }
-/* line 182, ../sass/style.scss */
+/* line 183, ../sass/style.scss */
 figure figcaption {
   position: absolute;
   font-weight: bold;
@@ -220,7 +221,7 @@ figure figcaption {
   border-right: 1px solid #000;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .flying {
   z-index: 10;
   width: 20vw;
@@ -230,48 +231,43 @@ figure figcaption {
   transition: transform 3s;
 }
 
-/* line 203, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .fly {
   transform: translate(100vw, 100vw);
 }
 
 @media (max-width: 1200px) {
-  /* line 208, ../sass/style.scss */
+  /* line 209, ../sass/style.scss */
   .flying {
-    z-index: 10;
-    position: absolute;
-    width: 40vw;
-    height: 40vw;
-    transform: translate(-40vw, -40vw);
-    transition: transform 1.5s;
+    display: none;
   }
 
-  /* line 216, ../sass/style.scss */
+  /* line 212, ../sass/style.scss */
   .fly {
     transform: translate(100vw, 100vw);
   }
 
-  /* line 219, ../sass/style.scss */
+  /* line 215, ../sass/style.scss */
   .row {
     flex-direction: column;
   }
 
-  /* line 222, ../sass/style.scss */
+  /* line 218, ../sass/style.scss */
   .col-md-6 {
     width: 100%;
   }
 
-  /* line 226, ../sass/style.scss */
+  /* line 222, ../sass/style.scss */
   #s1 h1 {
     font-size: 15vw;
   }
-  /* line 229, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   #s1 h2 {
     font-size: 4vw;
   }
 }
 @media (max-width: 700px) {
-  /* line 236, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   #menu {
     flex-direction: column;
     height: 100%;
@@ -281,7 +277,7 @@ figure figcaption {
     transform: translateX(-300px);
     transition: transform 0.5s;
   }
-  /* line 244, ../sass/style.scss */
+  /* line 240, ../sass/style.scss */
   #menu.visible {
     transform: translateX(0);
   }
